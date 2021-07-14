@@ -1290,7 +1290,7 @@ static Status TranslateFakeQuantWithMinMaxVarsOp(
                                        ngraph::Shape{}, std::vector<int>({0}));
 
   auto min_greater_zero = ConstructNgNode<opset::Greater>(
-      op->name() + "/if_minimum_greater_zero", maximum, zero);
+      op->name() + "/if_minimum_greater_zero", minimum, zero);
   auto max_minus_min = ConstructNgNode<opset::Subtract>(
       op->name() + "/max_minus_min", maximum, minimum);
   minimum = ConstructNgNode<opset::Select>(op->name() + "/first_adj_min",
