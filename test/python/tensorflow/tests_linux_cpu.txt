@@ -27,7 +27,6 @@ tests_common.txt
 # Specify tests/patterns/regex that should be included
 
 
-
 ###################################################
 [SKIP]
 #Fails with this error : TopKImpl - Incorrect input data/index values precision.
@@ -35,12 +34,6 @@ tests_common.txt
 #OV TopK expects data to be F32 or BF16 and index I32
 
 # zero dim error
-identity_bijector_test.IdentityBijectorTest.testScalarCongruency
-math_ops_test.DivAndModTest.testFloorDivGrad
-reduction_ops_test.SumReductionTest.testDegenerate
-reduction_ops_test.MeanReductionTest.testDegenerate
-reduction_ops_test.ProdReductionTest.testDegenerate
-Gather_op_test.GatherTest.testHigherRank
 cwise_ops_binary_test.BinaryOpTest.testBCast_10A
 cwise_ops_binary_test.BinaryOpTest.testBCast_10B
 cwise_ops_binary_test.BinaryOpTest.testBCast_10C
@@ -114,6 +107,7 @@ reduction_ops_test.AnyReductionTest.testAxesType
 reduction_ops_test.MinReductionTest.testAxesType
 reduction_ops_test.ProdReductionTest.testAxesType
 cwise_ops_unary_test.UnaryOpTest.testComplexAbsGradGrad
+identity_bijector_test.IdentityBijectorTest.testScalarCongruency
 
 
 
