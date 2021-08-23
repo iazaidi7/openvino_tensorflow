@@ -1,3 +1,4 @@
+opencv-python
 openvino_tensorflow
 tensorflow==2.4.1
 pillow
