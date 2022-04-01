@@ -35,7 +35,7 @@ else
 fi
 
 # Check the YAPF format
-declare YAPF_VERSION=`python -c "import yapf; print(yapf.__version__)"`
+declare YAPF_VERSION=`python3 -c "import yapf; print(yapf.__version__)"`
 
 if [[ "${YAPF_VERSION}" != "${REQUIRED_YAPF_FORMAT_VERSION}" ]] ; then
     echo -n "Unable to match version for ${YAPF_FORMAT_BASENAME}"
